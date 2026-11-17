@@ -20,12 +20,12 @@ export const Route = createFileRoute("/")({
       { title: "Shyy Market — Rainbow Six Siege Scripts" },
       {
         name: "description",
-        content: "Handmade Rainbow Six Siege scripts: recoil control, overlays, macros and more.",
+        content: "Handmade Rainbow Six Siege tools: crosshair overlays, sensitivity calibration and stat tracking.",
       },
       { property: "og:title", content: "Shyy Market — Rainbow Six Siege Scripts" },
       {
         property: "og:description",
-        content: "Handmade Rainbow Six Siege scripts: recoil control, overlays, macros and more.",
+        content: "Handmade Rainbow Six Siege tools: crosshair overlays, sensitivity calibration and stat tracking.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -44,7 +44,7 @@ const perks = [
 const faqs = [
   { q: "How do I get my script after buying?", a: "You'll get a download link and a setup guide straight away, plus a role in our Discord." },
   { q: "Do scripts work after game updates?", a: "Yes. Every script gets free updates for life, usually within 24 hours of a patch." },
-  { q: "Which payment methods do you accept?", a: "Open a ticket in our Discord and we'll sort out payment with you directly." },
+  { q: "Which payment methods do you accept?", a: "Card payments are coming soon. For now, open a ticket in our Discord and we'll sort it out." },
   { q: "Can I get a refund?", a: "If a script doesn't work on your setup and we can't fix it, we'll refund you." },
 ];
 
@@ -76,8 +76,8 @@ function Index() {
               <span className="text-gradient-primary text-glow">Market</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-              Handmade R6 scripts for players who want an edge. Recoil control, overlays and
-              macros — quietly tuned, constantly updated.
+              Handmade R6 tools to sharpen your game. Crosshair overlays, sensitivity
+              calibration and stat tracking — quietly tuned, constantly updated.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Button asChild variant="tactical" size="xl">
@@ -90,7 +90,7 @@ function Index() {
             <dl className="mt-14 grid max-w-lg grid-cols-3 gap-6 border-t border-border/60 pt-6">
               {[
                 ["2.4k+", "Players"],
-                ["6", "Scripts"],
+                ["3", "Tools"],
                 ["24h", "Patch updates"],
               ].map(([v, l]) => (
                 <div key={l}>

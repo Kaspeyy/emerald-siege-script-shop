@@ -4,8 +4,8 @@ export type Product = {
   tagline: string;
   description: string;
   price: number;
-  category: "Recoil" | "Utility" | "Overlay" | "Bundle";
-  status: "Undetected" | "Updating" | "New";
+  category: "Utility" | "Overlay" | "Bundle";
+  status: "Live" | "Updating" | "New";
   features: string[];
 };
 
@@ -14,17 +14,6 @@ export const DISCORD_URL = "https://discord.gg/";
 
 // Sample catalog: replace names, prices and descriptions with the real scripts.
 export const products: Product[] = [
-  {
-    id: "viper-recoil",
-    name: "Viper Recoil",
-    tagline: "Smooth recoil control for every operator",
-    description:
-      "Per-weapon recoil profiles tuned for every attachment combo. Switch loadouts in-round with a single keybind.",
-    price: 14.99,
-    category: "Recoil",
-    status: "Undetected",
-    features: ["All operators & weapons", "Per-attachment profiles", "Hotkey switching", "Lifetime updates"],
-  },
   {
     id: "fog-overlay",
     name: "Fog Overlay",
@@ -35,17 +24,6 @@ export const products: Product[] = [
     category: "Overlay",
     status: "New",
     features: ["40+ crosshair styles", "Custom colors", "Zero FPS impact", "Borderless & fullscreen"],
-  },
-  {
-    id: "serpent-macros",
-    name: "Serpent Macros",
-    tagline: "Keybind pack for faster plays",
-    description:
-      "Quick-lean, rapid-ping and drone macros built for competitive ranked. Fully remappable.",
-    price: 9.99,
-    category: "Utility",
-    status: "Undetected",
-    features: ["Quick-lean binds", "Rapid ping", "Drone shortcuts", "Fully remappable"],
   },
   {
     id: "sens-calibrator",
@@ -61,13 +39,13 @@ export const products: Product[] = [
   {
     id: "shyy-bundle",
     name: "Shyy Bundle",
-    tagline: "Every script. One price.",
+    tagline: "Every tool. One price.",
     description:
-      "Get Viper Recoil, Fog Overlay, Serpent Macros and Sens Calibrator together with priority support.",
+      "Get Fog Overlay, Sens Calibrator and Ranked Toolkit together with priority support.",
     price: 29.99,
     category: "Bundle",
-    status: "Undetected",
-    features: ["All 4 scripts", "Priority support", "Early access to new drops", "Lifetime updates"],
+    status: "Live",
+    features: ["All 3 tools", "Priority support", "Early access to new drops", "Lifetime updates"],
   },
   {
     id: "ranked-toolkit",
