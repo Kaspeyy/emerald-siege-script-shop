@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Store catalog lives in `src/lib/products.ts` (static data, no backend yet); product pages read from it by id so adding an entry adds a page.
